@@ -1,0 +1,34 @@
+[user]
+	name = osamingo
+	email = osamingo@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore
+	# http://stackoverflow.com/questions/136178/git-diff-handling-long-lines
+	pager = less -r
+	editor = vi
+
+[color]
+	ui = auto
+
+[push]
+	# push only the current branch
+	default = tracking
+
+[branch]
+	autosetuprebase = always
+
+[merge]
+	# from 1.7.6
+	ff = false
+
+[pull]
+	# from 1.7.9
+	rebase = true
+
+[browse-remote "github.com"]
+	top = https://{host}/{path}
+	ref = https://{host}/{path}/tree/{short_ref}
+	rev = https://{host}/{path}/commit/{commit}
+	file = "https://{host}/{path}/blob/{short_rev}/{file}{line && \"#L%d\" % line}"
+
