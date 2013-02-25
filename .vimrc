@@ -2,7 +2,7 @@ syntax enable
 
 set nobackup
 set fileencoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,utf-8,ucs-2,sjis
+set fileencodings=utf-8,iso-2022-jp,euc-jp,ucs-2,sjis
 set autoindent
 set number
 set incsearch
