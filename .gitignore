@@ -1,3 +1,7 @@
+# use gibo cmd
+# https://github.com/simonwhitaker/gitignore-boilerplates
+
+
 ### /Users/osamingo/.gitignore-boilerplates/Global/Eclipse.gitignore
 
 *.pydevproject

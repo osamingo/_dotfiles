@@ -1,3 +1,4 @@
+# https://gist.github.com/teppeis/4117588
 [user]
 	name = osamingo
 	email = osamingo@gmail.com
@@ -26,6 +27,8 @@
 	# from 1.7.9
 	rebase = true
 
+# http://subtech.g.hatena.ne.jp/motemen/20120917/1347889804
+# gem install git-browse-remote
 [browse-remote "github.com"]
 	top = https://{host}/{path}
 	ref = https://{host}/{path}/tree/{short_ref}
