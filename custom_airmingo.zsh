@@ -4,7 +4,8 @@ alias tm='/usr/local/bin/tmuxx'
 
 # zsh-completions 
 # brew install zsh-completions
-autoload -U compinit; compinit
+autoload -U compinit
+compinit -u
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 # rubyenv
