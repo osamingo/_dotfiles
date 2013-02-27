@@ -1,9 +1,11 @@
 #!/bin/bash
 
-DOT_FILES=( .zshrc .vimrc .gitconfig .gitignore .tmux.conf  )
-CUSTOM_ZSH=( custom_airmingo.zsh  )
+DOT_FILES=( .zshrc .vimrc .gitconfig .gitignore .tmux.conf )
+CUSTOM_ZSH_FILES=( custom_airmingo.zsh )
+TMUX_CMDS=( tmuxx tmux-pbcopy )
 
-ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
+ZSH_CUSTOM_DIR=$HOME/.oh-my-zsh/custom
+CMD_DIR=/usr/local/bin
 
 # HOME
 for file in ${DOT_FILES[@]}
@@ -17,12 +19,23 @@ do
 done
 
 # oh-my-zsh custom
-for file in ${CUSTOM_ZSH[@]}
+for file in ${CUSTOM_ZSH_FILES[@]}
 do
-	if [ -a $ZSH_CUSTOM/$file ]; then
+	if [ -a $ZSH_CUSTOM_DIR/$file ]; then
 		echo "既にファイルが存在します: $file"
 	else
-		ln -s $HOME/dotfiles/$file $ZSH_CUSTOM/$file
+		ln -s $HOME/dotfiles/$file $ZSH_CUSTOM_DIR/$file
+		echo "シンボリックリンクを貼りました: $file"
+	fi
+done
+
+# tmux
+for file in ${TMUX_CMDS[@]}
+do
+	if [ -a $CMD_DIR/$file ]; then
+		echo "既にファイルが存在します: $file"
+	else
+		ln -s $HOME/dotfiles/$file $CMD_DIR/$file
 		echo "シンボリックリンクを貼りました: $file"
 	fi
 done
