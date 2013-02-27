@@ -22,3 +22,14 @@ compdef mosh=ssh
 function precmd () {
 	z --add "$(pwd -P)"
 }
+
+# tmuxx start
+# http://qiita.com/items/1e1d3053c33f528363d9
+if [ -z $TMUX ]; then
+	if $(tmuxx has-session); then
+  		tmuxx attach
+	else
+		tmuxx
+	fi
+fi
+
