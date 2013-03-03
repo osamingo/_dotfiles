@@ -37,5 +37,5 @@ plugins=( git brew tmux  )
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/shims
+export PATH=$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
