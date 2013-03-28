@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=( .zshrc .vimrc .gitconfig .gitignore .tmux.conf )
+DOT_FILES=( .zshrc .vimrc .gitconfig .gitignore .tmux.conf .tmux-powerlinerc  )
 CUSTOM_ZSH_FILES=( custom_airmingo.zsh )
 TMUX_CMDS=( tmuxx tmux-pbcopy )
 
