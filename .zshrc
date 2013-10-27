@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=./oh-my-zsh
+ZSH=$HOME/dotfiles/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -32,10 +32,11 @@ ZSH_THEME="candy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=( git brew tmux node npm grunt  zsh-syntax-highlighting )
+plugins=(git brew tmux node npm grunt)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+source $HOME/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/share/npm/bin
 
