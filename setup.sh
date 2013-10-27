@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOT_FILES=( .zshrc .vimrc .gitconfig .gitignore .tmux.conf .tmux-powerlinerc  )
-CUSTOM_ZSH_FILES=( custom_airmingo.zsh )
+CUSTOM_ZSH_FILES=( custom.zsh )
 TMUX_CMDS=( tmuxx tmux-pbcopy )
 
 ZSH_CUSTOM_DIR=$HOME/.oh-my-zsh/custom

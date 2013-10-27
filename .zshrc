@@ -37,6 +37,18 @@ plugins=(git brew tmux node npm grunt)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# zsh-syntax-highlighting
 source $HOME/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH=$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/share/npm/bin
+
+# zsh-complations
+fpath=($HOME/dotfiles//zsh-completions/src $fpath)
+autoload -U compinit
+compinit -u
+
+# z
+. $HOME/dotfiles/z/z.sh
+
+# custom
+source $HOME/dotfiles/.zshrc.custom
 
