@@ -38,4 +38,4 @@ if [ -z $TMUX ]; then
 fi
 
 # export
-export PATH=$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/share/npm/bin:/Applications/Vagrant/bin
+export PATH=$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/share/npm/bin
