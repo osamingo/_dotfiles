@@ -32,7 +32,7 @@ ZSH_THEME="candy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=( git brew tmux node npm grunt scala rbenv vagrant tmux scala sbt ruby redis-cli bower bundler doker gem golang )
+plugins=( git brew tmux node npm grunt scala rbenv vagrant tmux scala sbt ruby redis-cli bower doker gem golang )
 
 source $ZSH/oh-my-zsh.sh
 
