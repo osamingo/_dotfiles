@@ -7,7 +7,7 @@
 	excludesfile = ~/.gitignore
 	# http://stackoverflow.com/questions/136178/git-diff-handling-long-lines
 	pager = less -r
-	editor = vi
+	editor = vim
 
 [color]
 	ui = auto
@@ -26,6 +26,14 @@
 [pull]
 	# from 1.7.9
 	rebase = true
+
+[alias]
+    co      = checkout
+	cm      = commit
+	st      = status
+	br      = branch
+	hist    = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
+	tree    = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
 
 # http://subtech.g.hatena.ne.jp/motemen/20120917/1347889804
 # gem install git-browse-remote
